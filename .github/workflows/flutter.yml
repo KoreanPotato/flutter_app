@@ -19,7 +19,7 @@ jobs:
 
       - name: Build APK
         run: |
-          cd frontend
+          cd  my_app
           flutter build apk --release    
 
       - name: Upload to Firebase
