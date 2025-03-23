@@ -21,6 +21,11 @@ jobs:
         run: |
           cd  my_app
           flutter build apk --release    
+      
+      - name: Get dependencies
+        run: |
+          cd my_app
+          flutter pub get
 
       - name: Upload to Firebase
         uses: wzieba/Firebase-Distribution-Github-Action@v1
