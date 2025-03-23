@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "275973895673",
+    "project_id": "get-hello-app",
+    "storage_bucket": "get-hello-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275973895673:android:d2f6c95a6bc5ee45e23928",
+        "android_client_info": {
+          "package_name": "get.hello.name"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB-7VUkLhPYUkpR6l3Fm64NJ5-EQIYtZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
