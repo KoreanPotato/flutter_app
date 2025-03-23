@@ -1,33 +1,33 @@
-name: upload APK
+# name: upload APK
 
-on: 
-  push:
-    branches: [main]
+# on: 
+#   push:
+#     branches: [main]
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
 
-steps:
-  - name: Checkout code
-    uses: actions/checkout@v3
+# steps:
+#   - name: Checkout code
+#     uses: actions/checkout@v3
 
-  - name: Set up Flutter
-    uses: subosito/flutter-action@v2
-    with:
-      flutter-version: '3.13.0'    
+#   - name: Set up Flutter
+#     uses: subosito/flutter-action@v2
+#     with:
+#       flutter-version: '3.13.0'    
 
-  - name: Build APK
-    run: |
-      cd frontend
-      flutter build apk --release    
+#   - name: Build APK
+#     run: |
+#       cd frontend
+#       flutter build apk --release    
 
-  - name: Upload to Firebase
-    uses: wzieba/Firebase-Distribution-Github-Action@v1
-    with:
-      appId: ${{ secrets.FIREBASE_APP_ID }}
-      token: ${{ secrets.FIREBASE_TOKEN }}
-      groups: testers
-      file: my_app/build/app/outputs/flutter-apk/app-release.apk
+#   - name: Upload to Firebase
+#     uses: wzieba/Firebase-Distribution-Github-Action@v1
+#     with:
+#       appId: ${{ secrets.FIREBASE_APP_ID }}
+#       token: ${{ secrets.FIREBASE_TOKEN }}
+#       groups: testers
+#       file: my_app/build/app/outputs/flutter-apk/app-release.apk
 
-      1//03ZvglCdeBdbXCgYIARAAGAMSNwF-L9Ir6qY9A3w-mHW_UHUBcW6kQe1cNYNAk66SSkE_-grKPzAEYlJRLUBaXCXGuEBN9f-7vas
+#       1//03ZvglCdeBdbXCgYIARAAGAMSNwF-L9Ir6qY9A3w-mHW_UHUBcW6kQe1cNYNAk66SSkE_-grKPzAEYlJRLUBaXCXGuEBN9f-7vas
